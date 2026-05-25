@@ -1,9 +1,10 @@
-# 🚜 TerramEarth: Sistema de Monitoreo y Telemetría IoT
+#  TerramEarth: Sistema de Monitoreo y Telemetría IoT
 **Evaluación sobre Integración de Procesos y Automatización (EIP)** *Proyecto de Ingeniería Civil Informática - Universidad Técnica Federico Santa María*
 
+Equipo TP202602 Quemen el DFIS
 ---
 
-## 📑 Tabla de Contenidos
+##  Tabla de Contenidos
 1. [Sección 1: Descripción del Proceso](#sección-1-descripción-del-proceso)
 2. [Sección 2: Propuesta de Integración](#sección-2-propuesta-de-integración)
 3. [Sección 3: Diagrama Representativo](#sección-3-diagrama-representativo)
@@ -13,7 +14,7 @@
 
 ---
 
-## 📌 Sección 1: Descripción del Proceso
+##  Sección 1: Descripción del Proceso
 
 **Proceso seleccionado:** Sistema de Monitoreo y Telemetría IoT para Maquinaria Agrícola.
 
@@ -22,15 +23,15 @@ El proceso central consiste en la captura, clasificación y distribución asínc
 * **Datos Críticos (Tiempo Real):** Información de diagnóstico y errores inmediatos (ej. sobrecalentamiento). Requieren una acción urgente mediante notificaciones.
 * **Datos Operacionales (Batch):** Información de telemetría y rendimiento recolectada durante la jornada laboral para análisis histórico.
 
-### Relevancia y Justificación de la Automatización
-En la industria agrícola, la disponibilidad de la maquinaria es crítica; una falla mecánica en temporada de cosecha genera pérdidas económicas masivas. La automatización se justifica por:
-1. **Volumen de Datos:** Es humanamente imposible procesar los millones de puntos de datos diarios generados por una flota.
-2. **Reducción de Latencia:** La automatización asegura que un evento crítico dispare alertas instantáneas sin intervención humana, evitando daños catastróficos.
+### Relevancia de la Automatización
+En la industria agrícola, la disponibilidad de la maquinaria es crítica, donde una falla mecánica en temporada de cosecha genera pérdidas económicas masivas. La automatización se justifica por:
+1. **Volumen de Datos:** Procesar los millones de puntos de datos diarios generados por cada vehículo industrial.
+2. **Reducción de Latencia:** La automatización asegura que un evento crítico dispare alertas instantáneas sin intervención humana.
 3. **Mantenimiento Predictivo:** El flujo continuo hacia herramientas de análisis (Power BI) e Inteligencia Artificial permite predecir fallas antes de que ocurran.
 
 ---
 
-## ⚙️ Sección 2: Propuesta de Integración
+##  Sección 2: Propuesta de Integración
 
 Para solucionar el desafío de TerramEarth, se propone una arquitectura basada en **Patrones de Integración Empresarial (EIP)**, eliminando el acoplamiento fuerte y garantizando la resiliencia del sistema.
 
@@ -52,7 +53,7 @@ Para solucionar el desafío de TerramEarth, se propone una arquitectura basada e
 
 ---
 
-## 📊 Sección 3: Diagrama Representativo
+##  Sección 3: Diagrama Representativo
 
 La solución se divide en dos perspectivas arquitectónicas para comprender tanto la infraestructura general como el flujo lógico de integración.
 
@@ -77,34 +78,34 @@ Este diagrama detalla la lógica interna utilizando la notación estándar de In
 
 ---
 
-## 🚀 Sección 4: Implementación
+##  Sección 4: Implementación
 
 ### Plan de Despliegue
 Para llevar a cabo la solución, se estructuran las siguientes fases:
 1. **Capa Edge (Borde):** Instalación del cliente IoT en los tractores para capturar y empaquetar lecturas en JSON.
 2. **Capa Middleware:** Despliegue de Apache ActiveMQ en el puerto `8161/61616`. Configuración de colas como `TerramEarth_Datos`.
 3. **Capa de Procesamiento:** Orquestación de pipelines ETL en Apache Beam para consumir asíncronamente desde ActiveMQ.
-4. **Capa de Almacenamiento y Explotación:** Volcado en BigQuery y conexión final con tableros de Power BI.
+4. **Capa de Almacenamiento y Explotación:** Volcado en BigQuery y conexión final con tableros de Power BI para los analistas.
 
 ### Desafíos y Soluciones Anticipadas
 
 | Desafío Anticipado | Solución Propuesta (EIP) |
 | :--- | :--- |
-| **Pérdida de señal en zonas rurales** | Implementar **Guaranteed Delivery**, almacenando mensajes localmente en el tractor hasta recuperar red. |
-| **Cuellos de botella en la ingesta** | ActiveMQ actúa como *buffer* (amortiguador) para que los sistemas de destino procesen a su propio ritmo. |
-| **Cambios en el formato del sensor** | Uso de **Message Translator** en el pipeline para normalizar cualquier estructura nueva antes de BigQuery. |
+| **Pérdida de señal en zonas rurales** | Implementar un almacenando de mensajes localmente en el tractor hasta recuperar red. |
+| **Cuellos de botella en la ingesta** | ActiveMQ actúa como *buffer* para que los sistemas de destino procesen a su propio ritmo. |
+| **Cambios en el formato del sensor** | Uso de Pipelines para normalizar cualquier estructura nueva antes de su guardado en BigQuery. |
 
 ---
 
-## 🎯 Conclusión
+##  Conclusión
 
 La automatización de ecosistemas industriales complejos como TerramEarth demuestra que las conexiones directas punto a punto son ineficientes y frágiles. La aplicación rigurosa de los **Principios de Integración Empresarial (EIP)** es fundamental para construir arquitecturas robustas y escalables. 
 
-Al introducir intermediarios de mensajería (Message Brokers) y enrutadores lógicos, se logra un ecosistema altamente **desacoplado**. Esto garantiza que el hardware en terreno opere de forma asíncrona y segura, viabilizando el objetivo principal del negocio: pasar de un mantenimiento reactivo a un modelo predictivo, asegurando que el dato correcto llegue al sistema adecuado en el momento preciso.
+Al introducir intermediarios de mensajería (Message Brokers) y enrutadores lógicos, se logra un ecosistema altamente **desacoplado**. Esto garantiza que el hardware en terreno opere de forma asíncrona y segura, viabilizando el objetivo principal del negocio. Pasar de un mantenimiento reactivo a un modelo predictivo, asegurando que el dato correcto llegue al sistema adecuado en el momento preciso.
 
 ---
 
-## 🎮 Simulador Edge (Godot)
+##  Simulador Godot
 
 Este repositorio incluye una simulación desarrollada en el motor Godot que emula el comportamiento de los sensores de la maquinaria y su integración con el Message Broker.
 
