@@ -10,7 +10,7 @@ Equipo TP202602 Quemen el DFIS
 3. [Sección 3: Diagrama Representativo](#sección-3-diagrama-representativo)
 4. [Sección 4: Implementación](#sección-4-implementación)
 5. [Conclusión](#conclusión)
-6. [Simulador Edge (Godot)](#simulador-edge-godot)
+6. [Simulador Godot](#simulador-godot)
 
 ---
 
