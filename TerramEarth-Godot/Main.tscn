@@ -1,0 +1,679 @@
+[gd_scene format=3 uid="uid://dkq31i00yhlxa"]
+
+[ext_resource type="Script" uid="uid://dfcmwu0cdesfu" path="res://main.gd" id="1_glv2v"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uu6xs"]
+bg_color = Color(0, 0.6250423, 0.9979693, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r0du0"]
+bg_color = Color(0.60817766, 0.6343798, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cm0pq"]
+bg_color = Color(0.97915477, 0.38534433, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fos0i"]
+bg_color = Color(0.23756611, 0.71612245, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3dxm6"]
+bg_color = Color(0.9882353, 0, 0.05490196, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lgr22"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_glv2v"]
+bg_color = Color(0.23921569, 0.7176471, 0.007843138, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_trn2v"]
+bg_color = Color(0.23921569, 0.7176471, 0.007843138, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_03owx"]
+bg_color = Color(0.23921569, 0.7176471, 0.007843138, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wkp8b"]
+bg_color = Color(0.98039216, 0.38431373, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_20pc6"]
+bg_color = Color(0.98039216, 0.38431373, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5vvyt"]
+bg_color = Color(0, 0.62352943, 0.99607843, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c6i3y"]
+bg_color = Color(0, 0.62352943, 0.99607843, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c2ibq"]
+bg_color = Color(0.6194887, 0.61948866, 0.6194887, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j4qnp"]
+bg_color = Color(0.61960787, 0.61960787, 0.61960787, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fpfj3"]
+bg_color = Color(0.61960787, 0.61960787, 0.61960787, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sc1dx"]
+bg_color = Color(0.61960787, 0.61960787, 0.61960787, 1)
+
+[node name="Control" type="Control" unique_id=1770836916]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_glv2v")
+
+[node name="Timer" type="Timer" parent="." unique_id=1731139945]
+wait_time = 2.0
+autostart = true
+
+[node name="PanelSensores" type="Panel" parent="." unique_id=756554744]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.007
+anchor_top = 0.072000004
+anchor_right = 0.147
+anchor_bottom = 0.209
+offset_left = 392.56
+offset_top = 149.23999
+offset_right = 378.76
+offset_bottom = 149.28
+theme_override_styles/panel = SubResource("StyleBoxFlat_uu6xs")
+
+[node name="LabelSensores" type="Label" parent="PanelSensores" unique_id=1951406427]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 18
+text = "Sensores"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="PanelClasificador" type="Panel" parent="." unique_id=45517540]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.21200001
+anchor_top = 0.065000005
+anchor_right = 0.35000002
+anchor_bottom = 0.21900001
+offset_left = -1.0400391
+offset_top = 335.00998
+offset_right = -16.000061
+offset_bottom = 316.68994
+theme_override_styles/panel = SubResource("StyleBoxFlat_r0du0")
+
+[node name="LabelClasificador" type="Label" parent="PanelClasificador" unique_id=1107964191]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 18
+text = "Clasificador"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="PanelAlertas" type="Panel" parent="." unique_id=994893793]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.407
+anchor_top = 0.065000005
+anchor_right = 0.54800004
+anchor_bottom = 0.22500001
+offset_left = 106.56
+offset_top = 332.8
+offset_right = 105.839966
+offset_bottom = 332.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_cm0pq")
+
+[node name="LabelAlertas" type="Label" parent="PanelAlertas" unique_id=1693881179]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 0.4249878
+offset_bottom = 0.5959625
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 18
+text = "Alertas"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="PanelTelemetria" type="Panel" parent="." unique_id=1726496620]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.21200001
+anchor_top = 0.273
+anchor_right = 0.35200003
+anchor_bottom = 0.43600002
+offset_left = -1.0400391
+offset_top = 321.16
+offset_right = -0.7741089
+offset_bottom = 321.126
+theme_override_styles/panel = SubResource("StyleBoxFlat_fos0i")
+
+[node name="LabelTelemetria" type="Label" parent="PanelTelemetria" unique_id=939208158]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 18
+text = "Telemetria"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="PanelSalida" type="Panel" parent="." unique_id=259897611]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.21800001
+anchor_top = 0.48600003
+anchor_right = 0.35300002
+anchor_bottom = 0.637
+offset_left = 476.43997
+offset_top = 363.12
+offset_right = 474.24
+offset_bottom = 382.03998
+theme_override_styles/panel = SubResource("StyleBoxFlat_3dxm6")
+
+[node name="LabelSalida" type="Label" parent="PanelSalida" unique_id=1283766841]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 18
+text = "Salida"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="RichTextLabelLogs" type="RichTextLabel" parent="." unique_id=1076225467]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.646
+anchor_top = 0.0050000004
+anchor_right = 0.99500006
+anchor_bottom = 0.99100006
+offset_left = -0.13000488
+offset_top = -0.23000026
+offset_right = -0.22509766
+offset_bottom = -0.22607422
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_lgr22")
+text = "LOGS DEL SISTEMA"
+scroll_following = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CR SC" type="ColorRect" parent="." unique_id=1747805444]
+z_index = -1
+layout_mode = 1
+offset_left = 535.0
+offset_top = 324.0
+offset_right = 686.9922
+offset_bottom = 331.0
+rotation = 1.5707964
+
+[node name="CR TS" type="ColorRect" parent="." unique_id=786473633]
+z_index = -1
+layout_mode = 1
+offset_left = 678.0
+offset_top = 991.0
+offset_right = 898.0
+offset_bottom = 998.0
+
+[node name="CR CA" type="ColorRect" parent="." unique_id=1223940905]
+z_index = -1
+layout_mode = 1
+offset_left = 600.0
+offset_top = 487.0
+offset_right = 954.0
+offset_bottom = 493.0
+
+[node name="CR AS" type="ColorRect" parent="." unique_id=1701195626]
+z_index = -1
+layout_mode = 1
+offset_left = 1019.0
+offset_top = 531.0
+offset_right = 1026.0
+offset_bottom = 803.0
+
+[node name="CR CT" type="ColorRect" parent="." unique_id=973484953]
+z_index = -1
+layout_mode = 1
+offset_left = 528.0
+offset_top = 483.0
+offset_right = 535.0
+offset_bottom = 700.0
+
+[node name="PanelDataSet" type="Panel" parent="." unique_id=1876971043]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.21700001
+anchor_top = 0.513
+anchor_right = 0.29900002
+anchor_bottom = 0.62600005
+offset_left = 65.359985
+offset_top = 277.95996
+offset_right = 7.919922
+offset_bottom = 235.91992
+theme_override_styles/panel = SubResource("StyleBoxFlat_glv2v")
+
+[node name="LabelDataSet" type="Label" parent="PanelDataSet" unique_id=1411005785]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Data set"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PanelBigQuery" type="Panel" parent="." unique_id=1307988592]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.31500003
+anchor_top = 0.512
+anchor_right = 0.411
+anchor_bottom = 0.62700003
+offset_left = -122.80005
+offset_top = 401.03998
+offset_right = -207.12
+offset_bottom = 356.83997
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_trn2v")
+
+[node name="LabelBigQuery" type="Label" parent="PanelBigQuery" unique_id=958974857]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "BigQuery"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="PanelVertexAI" type="Panel" parent="." unique_id=876125907]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.42800003
+anchor_top = 0.51600003
+anchor_right = 0.507
+anchor_bottom = 0.625
+offset_left = -204.76007
+offset_top = 396.71997
+offset_right = -256.44006
+offset_bottom = 359.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_03owx")
+
+[node name="LabelVertexAI" type="Label" parent="PanelVertexAI" unique_id=1287029830]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.013
+anchor_bottom = 1.0
+offset_right = 0.024002075
+offset_bottom = -1.0
+text = "Vertex AI"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="CR TD" type="ColorRect" parent="." unique_id=325810601]
+z_index = -1
+layout_mode = 0
+offset_left = 528.0
+offset_top = 786.0
+offset_right = 535.0
+offset_bottom = 832.0
+
+[node name="CR DB" type="ColorRect" parent="." unique_id=1776420279]
+z_index = -1
+layout_mode = 0
+offset_left = 528.0
+offset_top = 873.0
+offset_right = 535.0
+offset_bottom = 954.0
+
+[node name="CR BV" type="ColorRect" parent="." unique_id=479218266]
+z_index = -1
+layout_mode = 0
+offset_left = 560.0
+offset_top = 991.0
+offset_right = 649.0
+offset_bottom = 998.0
+
+[node name="PanelNotificacion" type="Panel" parent="." unique_id=96216311]
+layout_mode = 1
+offset_left = 972.0
+offset_top = 639.0
+offset_right = 1072.0
+offset_bottom = 719.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_wkp8b")
+
+[node name="LabelNotificacion" type="Label" parent="PanelNotificacion" unique_id=1596364365]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Notificacion"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PanelBoletin" type="Panel" parent="." unique_id=1860897427]
+layout_mode = 0
+offset_left = 972.0
+offset_top = 781.0
+offset_right = 1072.0
+offset_bottom = 861.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_20pc6")
+
+[node name="LabelBoletin" type="Label" parent="PanelBoletin" unique_id=1590268716]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Boletin técnico"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="CR NB" type="ColorRect" parent="." unique_id=1521504833]
+z_index = -1
+layout_mode = 0
+offset_left = 1019.0
+offset_top = 693.0
+offset_right = 1026.0
+offset_bottom = 814.0
+
+[node name="CR BS" type="ColorRect" parent="." unique_id=1584540760]
+z_index = -1
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.034
+anchor_bottom = 0.08400001
+offset_left = 1019.0
+offset_top = 838.0
+offset_right = 960.72
+offset_bottom = 833.27997
+
+[node name="CR TEMPSENS" type="ColorRect" parent="." unique_id=815057666]
+z_index = -1
+layout_mode = 0
+offset_left = 83.0
+offset_top = 92.0
+offset_right = 90.0
+offset_bottom = 623.4254
+rotation = -1.23823
+
+[node name="CR LUCESSENS" type="ColorRect" parent="." unique_id=505129190]
+z_index = -1
+layout_mode = 0
+offset_left = 376.0
+offset_top = 91.0
+offset_right = 383.0
+offset_bottom = 332.4067
+rotation = -0.79332614
+
+[node name="CR PRESIONSENS" type="ColorRect" parent="." unique_id=1267551199]
+z_index = -1
+layout_mode = 0
+offset_left = 526.0
+offset_top = 91.0
+offset_right = 533.0
+offset_bottom = 240.0
+
+[node name="CR GPSSENS" type="ColorRect" parent="." unique_id=113610392]
+z_index = -1
+layout_mode = 0
+offset_left = 676.0
+offset_top = 93.0
+offset_right = 683.0
+offset_bottom = 302.30417
+rotation = 0.81353873
+
+[node name="CR RENDIMIENTOSENS" type="ColorRect" parent="." unique_id=383294603]
+z_index = -1
+layout_mode = 0
+offset_left = 826.0
+offset_top = 91.0
+offset_right = 833.0
+offset_bottom = 464.03882
+rotation = 1.1189713
+
+[node name="CR RPMSENS" type="ColorRect" parent="." unique_id=947067768]
+z_index = -1
+layout_mode = 0
+offset_left = 975.0
+offset_top = 100.0
+offset_right = 982.0
+offset_bottom = 608.4626
+rotation = 1.2707278
+
+[node name="CR ACEITESENS" type="ColorRect" parent="." unique_id=2099608877]
+z_index = -1
+layout_mode = 0
+offset_left = 232.13184
+offset_top = 83.10062
+offset_right = 239.13184
+offset_bottom = 495.75143
+rotation = -1.0740515
+
+[node name="PanelTemp" type="Panel" parent="." unique_id=1257372088]
+layout_mode = 0
+offset_left = 29.0
+offset_top = 41.0
+offset_right = 130.0
+offset_bottom = 108.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_5vvyt")
+
+[node name="LabelTemp" type="Label" parent="PanelTemp" unique_id=1034185399]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "TEMP "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PanelAceite" type="Panel" parent="." unique_id=1141597071]
+layout_mode = 0
+offset_left = 179.0
+offset_top = 41.0
+offset_right = 280.0
+offset_bottom = 108.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_c6i3y")
+
+[node name="LabelAceite" type="Label" parent="PanelAceite" unique_id=2059204608]
+layout_mode = 0
+offset_top = 1.0
+offset_right = 101.0
+offset_bottom = 67.0
+text = "ACEITE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PanelLuces" type="Panel" parent="." unique_id=2091298409]
+layout_mode = 0
+offset_left = 329.0
+offset_top = 41.0
+offset_right = 430.0
+offset_bottom = 108.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_c6i3y")
+
+[node name="LabelLuces" type="Label" parent="PanelLuces" unique_id=1326085659]
+layout_mode = 0
+offset_top = 1.0
+offset_right = 101.0
+offset_bottom = 67.0
+text = "LUCES"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PanelPresion" type="Panel" parent="." unique_id=1770422641]
+layout_mode = 0
+offset_left = 479.0
+offset_top = 41.0
+offset_right = 580.0
+offset_bottom = 108.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_c6i3y")
+
+[node name="LabelPresion" type="Label" parent="PanelPresion" unique_id=1416987515]
+layout_mode = 0
+offset_top = 1.0
+offset_right = 101.0
+offset_bottom = 67.0
+text = "PRESION"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PanelGPS" type="Panel" parent="." unique_id=884265260]
+layout_mode = 0
+offset_left = 629.0
+offset_top = 41.0
+offset_right = 730.0
+offset_bottom = 108.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_c6i3y")
+
+[node name="LabelGPS" type="Label" parent="PanelGPS" unique_id=1655964067]
+layout_mode = 0
+offset_top = 1.0
+offset_right = 101.0
+offset_bottom = 67.0
+text = "GPS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PanelRendimiento" type="Panel" parent="." unique_id=1958520391]
+layout_mode = 0
+offset_left = 779.0
+offset_top = 41.0
+offset_right = 880.0
+offset_bottom = 108.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_c6i3y")
+
+[node name="LabelRendimiento" type="Label" parent="PanelRendimiento" unique_id=459871747]
+layout_mode = 0
+offset_top = 1.0
+offset_right = 101.0
+offset_bottom = 67.0
+text = "RENDIMIENTO"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="PanelRPM" type="Panel" parent="." unique_id=651082254]
+layout_mode = 0
+offset_left = 929.0
+offset_top = 41.0
+offset_right = 1030.0
+offset_bottom = 108.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_c6i3y")
+
+[node name="LabelRPM" type="Label" parent="PanelRPM" unique_id=834983203]
+layout_mode = 0
+offset_top = 1.0
+offset_right = 101.0
+offset_bottom = 67.0
+text = "RPM"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PanelCriticos" type="Panel" parent="." unique_id=598279698]
+z_index = -2
+layout_mode = 0
+offset_left = 17.0
+offset_top = 16.0
+offset_right = 590.0
+offset_bottom = 123.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_c2ibq")
+
+[node name="LabelCritcos" type="Label" parent="PanelCriticos" unique_id=664460019]
+layout_mode = 0
+offset_right = 573.0
+offset_bottom = 107.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "CRITICOS"
+
+[node name="PanelOperacionales" type="Panel" parent="." unique_id=505963025]
+z_index = -2
+layout_mode = 0
+offset_left = 619.0
+offset_top = 16.0
+offset_right = 1037.0
+offset_bottom = 123.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_j4qnp")
+
+[node name="LabelOperacionales" type="Label" parent="PanelOperacionales" unique_id=885160178]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "OPERACIONALES"
+
+[node name="PanelSEA" type="Panel" parent="." unique_id=792772823]
+z_index = -2
+layout_mode = 0
+offset_left = 864.0
+offset_top = 378.0
+offset_right = 1172.0
+offset_bottom = 582.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_fpfj3")
+
+[node name="LabelSEA" type="Label" parent="PanelSEA" unique_id=1336486927]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "SISTEMA EVALUADOR DE ALERTAS"
+
+[node name="LabelSPT2" type="Panel" parent="." unique_id=379589283]
+z_index = -2
+layout_mode = 0
+offset_left = 358.0
+offset_top = 593.0
+offset_right = 684.0
+offset_bottom = 799.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_sc1dx")
+
+[node name="LabelSPT2" type="Label" parent="LabelSPT2" unique_id=232908387]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -0.99997187
+offset_top = 203.45068
+offset_right = -124.560455
+offset_bottom = 323.98474
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 4.712389
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "SISTEMA PROCESADOR DE TELEMETRÍA"
+autowrap_mode = 2
