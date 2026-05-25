@@ -11,6 +11,7 @@ Equipo TP202602 Quemen el DFIS
 4. [Sección 4: Implementación](#sección-4-implementación)
 5. [Conclusión](#conclusión)
 6. [Simulador Godot](#simulador-godot)
+7. [Demostración del Proyecto](#demostración-del-proyecto)
 
 ---
 
