@@ -113,3 +113,9 @@ Este repositorio incluye una simulación desarrollada en el motor Godot que emul
 1. Instalar y ejecutar [Apache ActiveMQ Classic](https://activemq.apache.org/components/classic/download/).
 2. Iniciar el servidor local (`bin/activemq start` o `./activemq console`).
 3. Ejecutar el proyecto en Godot. El script enviará automáticamente peticiones asíncronas vía API REST (`127.0.0.1:8161`) a la cola `TerramEarth_Datos`.
+
+##  Demostración del Proyecto
+
+Explicación de la arquitectura y la simulación en vivo conectando Godot con Apache ActiveMQ:
+
+[![Demostración TerramEarth](https://img.youtube.com/vi/rA3kKcKyEX8/0.jpg)](https://youtu.be/rA3kKcKyEX8)
