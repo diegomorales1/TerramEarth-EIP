@@ -60,14 +60,14 @@ La solución se divide en dos perspectivas arquitectónicas para comprender tant
 ### 1. Arquitectura Cloud General
 Este diagrama ilustra la infraestructura de alto nivel, mostrando el flujo desde la recolección en los vehículos hasta la explotación de datos en herramientas de inteligencia de negocios e IA.
 
-![Arquitectura Cloud TerramEarth](./ruta/a/tu/imagen_cloud.png)
-*(Reemplaza la ruta de arriba con tu primera imagen, la que muestra Kafka/Beam/PowerBI)*
+![Arquitectura Cloud TerramEarth](/TerramEarth_General.png)
+
 
 ### 2. Diagrama de Patrones de Integración (Notación EIP)
 Este diagrama detalla la lógica interna utilizando la notación estándar de Integración de Procesos Empresariales:
 
-![Diagrama EIP TerramEarth](./ruta/a/tu/imagen_drawio.png)
-*(Reemplaza la ruta de arriba con tu imagen exportada de Draw.io)*
+![Diagrama EIP TerramEarth](/EIP.TerramEarth.drawio.png)
+
 
 **Elementos EIP Destacados:**
 * **Message Endpoint:** Los sensores IoT (simulados) originando los datos.
